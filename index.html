@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
 
     <div id="calculadora">
-        <div class="display">1x5</div>
+        <div class="display">
+            <div class="valor"></div>
+            <div class="total"></div> 
+        </div>
+        <div class="bloco tamanho2" onclick="calculadora('CC')">CC</div>
+        <div class="bloco" onclick="calculadora('❮')">❮</div>
+        <div class="bloco" onclick="calculadora('÷')">÷</div>
         <div class="bloco" onclick="calculadora('7')">7</div>
         <div class="bloco" onclick="calculadora('8')">8</div>
         <div class="bloco" onclick="calculadora('9')">9</div>
@@ -23,7 +28,7 @@
         <div class="bloco" onclick="calculadora('2')">2</div>
         <div class="bloco" onclick="calculadora('3')">3</div>
         <div class="bloco" onclick="calculadora('+')">+</div>
-        <div class="bloco" onclick="calculadora('')"></div>
+        <div class="bloco" onclick="calculadora('.')">.</div>
         <div class="bloco" onclick="calculadora('0')">0</div>
         <div class="bloco" onclick="calculadora('C')">C</div>
         <div class="bloco" onclick="calculadora('=')">=</div>
