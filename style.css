@@ -7,10 +7,11 @@
     font-family: "Roboto Mono", sans-serif;
 }
 
-h1 {
-    text-align: center;
-}
+body {
+    padding: auto;
+    margin: 50px;
 
+}
 .display {
     width: 100%;
 } 
@@ -18,7 +19,7 @@ h1 {
 .total, .valor {
     width: 100%;
     min-height: 75px;
-    background-color: rgb(215, 215, 241);
+    background-color: rgb(225, 191, 233);
     display: flex;
     align-items: center;
     padding: 10px;
@@ -27,7 +28,7 @@ h1 {
 }
 
 .total {
-    background-color: rgb(198, 180, 214);
+    background-color: rgb(215, 193, 235);
 }
 
 #calculadora {
@@ -37,6 +38,10 @@ h1 {
     display: flex; 
     flex-wrap: wrap;
     user-select: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #000000be;
+    background-color: #c7c5e4;
+    
 }
 
 .bloco {
@@ -52,6 +57,7 @@ h1 {
     border: 1px solid #000;
     background-color: blueviolet;
     transition: all 0.3s;
+    border-radius: 4px;
 
 }
 
