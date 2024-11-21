@@ -7,33 +7,12 @@
     font-family: "Roboto Mono", sans-serif;
 }
 
-body {
-    padding: auto;
-    margin: 50px;
-
-}
-.display {
-    width: 100%;
-} 
-
-.total, .valor {
-    width: 100%;
-    min-height: 75px;
-    background-color: rgb(225, 191, 233);
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 30px;
-    word-break: break-all;
-}
-
-.total {
-    background-color: rgb(215, 193, 235);
-}
-
 #calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
-    margin: 0 auto;
     padding: 5px;
     border: 1px solid #000;
     display: flex; 
@@ -43,6 +22,7 @@ body {
     box-shadow: 0 4px 10px #000000be;
     background-color: rgb(215, 193, 235);
     overflow: hidden;
+    gap: 5px;
     
 }
 
@@ -53,20 +33,42 @@ body {
     /* align-content: center;
     flex-wrap: wrap; */
     align-items: center;
-    width: 25%;
-    height: 75px;
+    width: calc(25% - (15px/4));
+    height: 65px;
     border: 1px solid #000;
     background-color: blueviolet;
     transition: all 0.3s;
-    border-radius: 4px;
+    border-radius: 10px;
     margin: 0;
-
+    box-shadow: 0 4px 10px#3b0780ee;
 }
 
 .bloco.tamanho2 {
-    width: 50%;
+    width: calc(50% - 2.5px);
+}
+
+.bloco.igual {
+    background-color: #d2a8e6;
 }
 
 .bloco:hover {
     background-color: rgb(173, 139, 204);
+}
+
+.display {
+    width: 100%;
+} 
+
+.total, .valor {
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    word-break: break-all;
+}
+
+.valor {
+    background-color: rgb(225, 191, 233);
 }
